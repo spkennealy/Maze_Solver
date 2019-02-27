@@ -10,6 +10,7 @@ Run:  ruby maze.rb
 # Run with a Different Maze
 
 Open maze.rb  
-Add in new maze:  
-    maze1 = Maze.new(NEW MAZE)  
-Run:  maze1.find_solution  
+Save new maze text file to directory.  
+Add in new maze text file into parenthesis after .new:  
+    maze1 = Maze.new(NEW MAZE FILE)  
+Run:  ruby maze.rb  
