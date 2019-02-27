@@ -139,29 +139,10 @@ class Maze
             puts ""
         end 
     end 
-
-    # def [](pos)
-    #     @maze[pos[0]][pos[1]]
-    # end 
-
-    # def []=(pos, value)
-    #     @maze[pos[0]][pos[1]] = value
-    # end 
 end 
 
 
-maze1 = Maze.new("maze1.txt")
-system("clear")
-# maze1.render_maze
-# puts ""
-# puts "---- START POINT ----".red
-# puts "       #{maze1.find_start}"
-# puts "" 
-# puts "----- END POINT -----".blue
-# puts "       #{maze1.find_end}"
-# puts "" 
-# p maze1.current_position
-# new_position = [0, 0]
-# p maze1.wall?(new_position)
-maze1.find_solution
-
+if __FILE__ == $PROGRAM_NAME
+    maze1 = Maze.new("maze1.txt")
+    maze1.find_solution
+end
